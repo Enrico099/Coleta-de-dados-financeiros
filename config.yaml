@@ -1,0 +1,113 @@
+# ============================================
+# Bot de Inteligência Econômica - Configurações
+# ============================================
+
+schedule:
+  coleta_hora: "06:00"
+  envio_hora: "08:00"
+  alertas_intervalo_min: 60  # atualiza cotações e checa alertas (0 = desliga)
+  timezone: "America/Sao_Paulo"
+
+instagram:
+  perfis:
+    - "infomoney"
+    - "investidorsardinha"
+    - "primorico"
+    - "economiainfoco"
+    - "genaborsa"
+  max_posts_por_perfil: 5
+  delay_entre_perfis: 5  # segundos
+
+linkedin:
+  # Slugs das páginas públicas de empresas (linkedin.com/company/<slug>/)
+  empresas:
+    - "infomoney"
+    - "valoreconomico"
+    - "btgpactual"
+    - "xpinc"
+    - "itau"
+    - "bloomberg-news"
+    - "the-economist"
+    - "financial-times"
+  max_posts: 10  # por empresa
+
+news:
+  feeds:
+    - name: "InfoMoney"
+      url: "https://www.infomoney.com.br/feed/"
+    - name: "Valor Econômico"
+      url: "https://pox.globo.com/rss/valor/"
+    - name: "Investing.com BR"
+      url: "https://br.investing.com/rss/news.rss"
+    - name: "Bloomberg Línea Brasil"
+      url: "https://www.bloomberglinea.com.br/arc/outboundfeeds/rss/?outputType=xml"
+  google_news_termos:
+    - "economia brasileira"
+    - "investimentos Brasil"
+    - "bolsa de valores hoje"
+    - "dólar hoje"
+    - "taxa Selic"
+    - "mercado financeiro"
+    - "Bitcoin criptomoedas"
+    - "inflação IPCA"
+  max_noticias: 20
+
+finance:
+  ativos:
+    - symbol: "^BVSP"
+      name: "IBOVESPA"
+      tipo: "indice"
+    - symbol: "BRL=X"
+      name: "Dólar/Real"
+      tipo: "moeda"
+    - symbol: "EURBRL=X"
+      name: "Euro/Real"
+      tipo: "moeda"
+    - symbol: "BTC-USD"
+      name: "Bitcoin"
+      tipo: "cripto"
+    - symbol: "ETH-USD"
+      name: "Ethereum"
+      tipo: "cripto"
+    - symbol: "GC=F"
+      name: "Ouro"
+      tipo: "commodity"
+    - symbol: "^GSPC"
+      name: "S&P 500"
+      tipo: "indice"
+    - symbol: "^IXIC"
+      name: "NASDAQ"
+      tipo: "indice"
+    - symbol: "PETR4.SA"
+      name: "Petrobras PN"
+      tipo: "acao"
+    - symbol: "VALE3.SA"
+      name: "Vale ON"
+      tipo: "acao"
+  indicadores_bcb:
+    - code: 432
+      name: "Taxa Selic"
+      unidade: "% a.a."
+    - code: 433
+      name: "IPCA"
+      unidade: "% no mês"
+    - code: 1
+      name: "Dólar Comercial (venda)"
+      unidade: "R$"
+
+analysis:
+  sentiment_threshold_positive: 0.05
+  sentiment_threshold_negative: -0.05
+  trend_window_days: 7
+  alert_variation_percent: 3.0
+
+dashboard:
+  port: 8501
+  title: "📊 Painel de Inteligência Econômica"
+
+database:
+  path: "data/economia.db"
+
+logging:
+  level: "INFO"
+  file: "data/bot.log"

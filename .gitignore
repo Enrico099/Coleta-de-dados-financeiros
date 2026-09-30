@@ -1,0 +1,28 @@
+# Ambiente
+.env
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Dados
+data/
+*.db
+*.sqlite
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Gráficos temporários
+*.png
+!dashboard/*.png
