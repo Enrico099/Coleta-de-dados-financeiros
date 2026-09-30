@@ -89,6 +89,7 @@ python main.py --teste
 | `/resumo` | Resumo econômico do dia |
 | `/cotacoes` | Cotações atualizadas |
 | `/noticias` | Últimas notícias com sentimento |
+| `/eleicoes` | Notícias das eleições (48h), as que falam de mercado primeiro |
 | `/sentimento` | Sentimento do mercado (geral, por canal e por fonte) |
 | `/grafico [ativo]` | Gráfico de 30 dias com média móvel (ex: `/grafico IBOV`) |
 | `/tendencia [ativo]` | Tendência 7d, MM7/MM14 e leitura técnica simples |

@@ -50,7 +50,36 @@ news:
     - "mercado financeiro"
     - "Bitcoin criptomoedas"
     - "inflação IPCA"
+    # Eleições
+    - "eleições 2026"
+    - "pesquisa eleitoral presidente"
+    - "eleições mercado financeiro"
+    - "debate presidencial"
   max_noticias: 20
+  # Palavras que classificam uma notícia como "eleições" (/eleicoes e seção do resumo)
+  eleicoes_palavras:
+    - "eleição"
+    - "eleições"
+    - "eleitoral"
+    - "eleitorais"
+    - "eleitor"
+    - "eleitores"
+    - "candidato"
+    - "candidata"
+    - "candidatos"
+    - "presidenciável"
+    - "presidenciáveis"
+    - "primeiro turno"
+    - "segundo turno"
+    - "1º turno"
+    - "2º turno"
+    - "urna"
+    - "urnas"
+    - "TSE"
+    - "Datafolha"
+    - "Quaest"
+    - "AtlasIntel"
+    - "debate presidencial"
 
 finance:
   ativos:
